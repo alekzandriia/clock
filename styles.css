@@ -1,0 +1,48 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    border: 10px solid black;
+    border-radius: 50%;
+    height:50vh;
+    width:50vh;
+
+}
+
+.frame {
+    border: 10px solid white;
+    border-radius: 50%;
+    height:100%;
+    width:100%;
+    position: relative;
+}
+
+.seconds,
+.minutes,
+.hours {
+    width: 50%;
+    background:black;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    position: absolute;
+    top:50%;
+}
+
+.minutes,
+.hours {
+    height: 4px;
+}
+
+.seconds {
+    height:2px;
+}
